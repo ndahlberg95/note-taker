@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const notesRoutes = require('../apiRoutes/notesRoutes');
 
-router.use(animalRoutes);
+router.use(notesRoutes);
 
 module.exports = router;
