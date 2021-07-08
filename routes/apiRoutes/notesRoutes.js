@@ -14,6 +14,7 @@ router.get('/notes', (req, res) => {
 // receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you)
 router.post('/notes', (req, res) => {
     // add unique id to each post
+    req.body.id = Date.now();
     notes.push(req.body);
     fs.writeFileSync(path.join(__dirname, '../../db/db.json'), JSON.stringify(notes));
     res.json("Note saved!");
