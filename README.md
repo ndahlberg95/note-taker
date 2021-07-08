@@ -4,5 +4,5 @@
 
 ![Application Screenshot](./src/images/screenshot.png)
 
-## Heroku:
-## GitHub Repository:
+## Heroku: https://protected-hamlet-64796.herokuapp.com/
+## GitHub Repository: https://github.com/ndahlberg95/note-taker
